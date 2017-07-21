@@ -3,24 +3,47 @@
 <head>
 
 <style>
-.button {
-  text-align: center;
-  width: 200px;
-  height: 20px;
-}
-
-.button a {
-  width: 100%;
-  height: 100%;
-}
-
-#text-showing {
-  display: none;
-}
-
-#icon-showing {
-  display: inline-block;
-  color: black;
+    .button {
+        width: 200px;
+        height: 40px;
+    }
+    
+    .button a {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #text-showing {
+        display: none;
+    }
+    
+    #icon-showing {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    
+    #element-id {
+        background-color: tomato;
+    }
+    
+    #element-id:hover #icon-showing {
+        display: none;
+    }
+    
+    #element-id:hover #text-showing {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #element-id:hover,
+    #element-id:hover a {
+        background-color: darkslategray;
+        color: beige;
+        text-decoration: none;
+    }
 </style>
 
 <script src="https://use.fontawesome.com/de6f51e460.js"></script>
