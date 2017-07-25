@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .media-card {
+            width: 350px;
+            height: 400px;
+            position: relative;
+            margin: 10px 10px 10px 10px;
+        }
+        
+        .media-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .media-card>p {
+            width: 100%;
+        }
+        
+        .media-card a {
+            color: white;
+        }
+        
+        .media-card:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .caption {
+            background-color: dodgerblue;
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="media-card"><img>
+        <a href="#" style="height: 10rem">
+            <div class="caption">
+                <p>Link Caption</p>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
